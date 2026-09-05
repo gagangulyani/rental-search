@@ -1,0 +1,8 @@
+# Never commit harvested contact data — regenerate it locally instead.
+brokers*.json
+brokers*.md
+brokers*whatsapp*.txt
+*_whatsapp.txt
+problem-brief.md
+research-findings*.md
+broker-list.md
