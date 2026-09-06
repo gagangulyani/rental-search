@@ -131,9 +131,79 @@ job on their desk, and they can only show their own inventory. Owner-direct
 listings and in-society vacancies are invisible to them.
 
 Add: NoBroker and portal "no brokerage / owner" filters; local Facebook rental
-groups (**post the requirement**, don't only scan); and society **guards and
-facility managers**, who know every vacancy in their towers before any portal
-and are paid by nobody for it.
+groups (**post the requirement**, don't only scan); and the society **RWA
+secretary**, who knows every vacancy in the towers before any portal does.
+
+**Ask for the secretary, not security.** Where a society's lettings are
+broker-controlled, guards are instructed to deflect walk-ins to the tower's
+dealer — an entire sector's guard route returned "not available, ask broker".
+A better intermediary does not fix that; skipping intermediaries does.
+
+## Verify the Society, Not the Listing
+
+A listing describes one flat. A tenancy is a year inside a building. Check the
+building on its own before spending time on any unit in it.
+
+**Ratings: read the real Google Maps entity, never a portal's.** 99acres showed
+one Noida society at 3.9 from 20 reviews; the consolidated Google Maps entity for
+that same society was 3.4 from 554. Portal ratings are seeded and their samples
+are too small to carry weight.
+
+Three traps when pulling the real rating:
+
+- **Guessed place URLs lie by omission.** A hand-built
+  `google.com/maps/place/<society name>` often resolves to a locality pin with no
+  rating at all, which reads as "unrated" for a society that is in fact heavily
+  reviewed. Navigate to `google.com/maps/search/<query>` and take the entity from
+  the results instead.
+- **Sub-entities are not the society.** Large complexes fragment into per-tower
+  and per-gate entries carrying 1-5 reviews each. Only the consolidated entity
+  counts; anything under ~50 reviews is noise.
+- **A great rating can mean you cannot live there.** PSU, bank and services
+  housing (NTPC townships, `Canara Bank Apartment`, AWHO) rates well precisely
+  because it is employee-restricted. Check the stock is open to the market before
+  shortlisting it.
+
+**Confirm the configuration exists before trusting its price.** A review claimed
+₹17,000-20,000 2BHKs in a society whose live inventory was 3BHK-only from
+₹41,000. A price for a configuration nobody is currently letting is not a price.
+
+**Two or three independent listings, or it is not a rent figure.** A lone outlier
+far off market rate is a data error — a stitched parser field, a stale post, or
+one flat posted by four brokers. Duplicate broker postings also inflate apparent
+supply: treat repeated identical prices in one society as one flat until proven
+otherwise.
+
+## Tenant-Policy Evidence
+
+Bachelor and non-veg acceptance decides the tenancy and is almost never
+recoverable from portals. Across a full-city sweep, non-veg policy came back
+confirmed for exactly zero societies and bachelor policy for two.
+
+- **Marketing copy is not evidence.** "Ideal for families and bachelors" in a
+  description or an auto-generated review summary means nothing. A quoted review
+  from a named resident, or a listing's own explicit tenant tag, does.
+- **Negative evidence is decisive.** One reviewer writing that bachelors on rent
+  are not allowed disqualifies a society outright, however good the rating.
+- **Confirm with the RWA, not the broker.** The broker's incentive is to get you
+  to the viewing; the RWA is who enforces the rule at the gate.
+
+## When Nothing Clears the Bar
+
+If the user sets a numeric bar — a rent ceiling, a minimum rating and review
+count — apply it literally. Report every candidate as pass, near-miss or fail
+against the stated number with the exact gap. Do not soften a bar to make results
+appear.
+
+"Nothing in this city clears all of your constraints at once" is a finding, and
+often the most valuable one. Deliver it with the coverage that backs it and the
+closest near-misses, then hand the trade-off back — relax which constraint, widen
+the area, or change channel — as the user's decision, not one you already made.
+
+For a sweep wide enough to need it, split the geography across parallel
+subagents. They share no context, so each briefing must carry the full
+requirements, the bar, the sourcing rules above, and the already-checked
+skip-list. Require them to flag any method deviation rather than adapt silently.
 
 ## Hunt the Unmeasured Cost
 
@@ -151,6 +221,10 @@ in the open-questions list and in the broker call script.
 - Recommending a locality without knowing if the budget is all-in
 - Quietly switching recommendations when the user names their own areas
 - Treating the stated reason for moving as the real one
+- Quoting a society's rating from a portal rather than its Google Maps entity
+- Reading marketing copy as a bachelor or non-veg tenant policy
+- Reporting a rent for a configuration not currently on the market
+- Softening a numeric bar the user set because nothing cleared it
 
 ## Rationalizations
 
@@ -163,3 +237,8 @@ in the open-questions list and in the broker call script.
 | "Budget is the constraint" | Usually it is channel, timeline, or maintenance. Check those first. |
 | "Their sector list is wrong, I'll steer them to mine" | Research theirs, then state the disagreement openly. |
 | "A file is overkill, I'll put it in chat" | They need it at a viewing, on a phone, next week. |
+| "The portal shows 3.9, that's the rating" | Portal ratings run on ~20 curated reviews. The same society was 3.4 from 554 on Google Maps. |
+| "The society has no Maps rating" | You probably hit a locality pin from a guessed place URL. Search for it instead. |
+| "The description says bachelors welcome" | Marketing copy. A named resident's review or an explicit listing tag is evidence; nothing else is. |
+| "Nothing cleared the bar, I'll widen it slightly" | The empty result is the finding. Report it with near-misses; let them choose what to relax. |
+| "Guards know every vacancy" | Only where lettings aren't broker-controlled. Where they are, guards deflect to the dealer. Ask for the RWA secretary. |

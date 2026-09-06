@@ -45,6 +45,15 @@ source link per claim. Every factual claim carries `[V]` verified — with the
 receipt — or `[I]` inferred. Rent figures are labelled as portal *asking* prices,
 not transacted rents.
 
+**Vets the building, not just the flat.** Portal ratings are seeded and
+small-sample — one Noida society read 3.9 from 20 reviews on a portal and 3.4
+from 554 on Google Maps — so the skill sources ratings from the consolidated Maps
+entity and names the traps that produce false readings: guessed place URLs that
+land on an unrated locality pin, per-tower sub-entities with five reviews, and
+employee-restricted PSU housing that rates well because you cannot rent it.
+Bachelor and non-veg policy is treated as unconfirmed until a named resident's
+review or the RWA says otherwise; marketing copy does not count.
+
 **Gets actual phone numbers.** `extract_brokers.py` reads SquareYards' public
 locality agent directories. Each agent's profile photo is served from a URL whose
 filename encodes their registered number; the script decodes it, deduplicates,
@@ -74,6 +83,10 @@ These are constraints on the agent, and they matter more than the scraping:
 - **If the user names their own preferred areas, research those too** — and if
   the data disagrees with an earlier recommendation, say so out loud instead of
   quietly switching.
+- **A numeric bar the user sets is applied literally.** Candidates are reported
+  as pass, near-miss or fail with the exact gap. If nothing in the city clears
+  every constraint at once, that is the finding — delivered with its coverage and
+  the closest misses, leaving the choice of what to relax to the user.
 
 ## Install
 
